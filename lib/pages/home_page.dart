@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../components/grocery_item_tile.dart';
-
 class HomePage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -17,7 +15,6 @@ class HomePage extends StatelessWidget{
               child:   Text("Good morning babe<3"),
             ),
             const SizedBox(height: 4.0,),
-
 
             Padding(
              padding: const EdgeInsets.symmetric(horizontal: 24.0),
@@ -45,17 +42,19 @@ class HomePage extends StatelessWidget{
               ),
               ),
             ),
-
-
-
+            /*
             Expanded(
                 child:GridView.builder(gridDelegate:
                 const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
                     itemBuilder: (context,index){
-                  return GroceryItemTile();
+                  return GroceryItemTile(
+
+                  );
                     },
                     ),
             ),
+
+             */
           ],
 
         ),
