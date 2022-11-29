@@ -18,7 +18,6 @@ class HomePage extends StatelessWidget{
             ),
             const SizedBox(height: 4.0,),
 
-
             Padding(
              padding: const EdgeInsets.symmetric(horizontal: 24.0),
               child:   Text(
@@ -45,9 +44,6 @@ class HomePage extends StatelessWidget{
               ),
               ),
             ),
-
-
-
             Expanded(
                 child:GridView.builder(gridDelegate:
                 const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
