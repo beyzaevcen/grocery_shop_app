@@ -51,7 +51,7 @@ class HomePage extends StatelessWidget{
                   builder: (context, value, child){
                   return GridView.builder(
                     itemCount: value.shopItems.length,
-                      gridDelegate: 
+                      gridDelegate:
                   const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2),
                   itemBuilder: (context,index){
@@ -61,7 +61,7 @@ class HomePage extends StatelessWidget{
                             imagePath:value.shopItems[index][2],
                           color: value.shopItems[index][3],
                         );
-                  },  
+                  },
                   );
             }
                 )

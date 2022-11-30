@@ -19,7 +19,6 @@ class GroceryItemTile extends StatelessWidget{
      child: Column(
        children: [
          //image
-Image.asset(imagePath),
          //item name
 
          //price+button
