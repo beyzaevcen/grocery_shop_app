@@ -11,5 +11,32 @@ class CartModel extends ChangeNotifier{
 
 ];
 
+  //list of card items
+  List _cartItems =[];
+
+  get cartItems => _cartItems;
+
+
   get shopItems=> _shopItems;
+  //add items to card
+void addItemToCart(int index){
+  _cartItems.add(_shopItems[index]);
+  notifyListeners();
+  }
+//remove item frrom card
+void removeItems(int index){
+  _cartItems.removeAt(index);
+  notifyListeners();
+  }
+
+//calculate total price
+String calculateTotal(){
+  double totalPrice=0;
+  for(int i=0;i <cartItems.length;i++){
+    totalPrice+=double.parse(_cartItems[i][i]);
+  }
+  return totalPrice.toStringAsFixed(2);
+}
+
+
   }
